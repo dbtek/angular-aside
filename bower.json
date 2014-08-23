@@ -8,8 +8,8 @@
   },
   "description": "Off canvas side menu to use with ui-bootstrap.",
   "main": [
-    "angular-aside.js",
-    "angular-aside.css"
+    "dist/js/angular-aside.js",
+    "dist/css/angular-aside.css"
   ],
   "keywords": [
     "aside",
