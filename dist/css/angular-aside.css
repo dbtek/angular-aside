@@ -1,0 +1,133 @@
+/*!
+ * angular-aside - v1.0.0
+ * https://github.com/dbtek/angular-aside
+ * 2014-08-23
+ * Copyright (c) 2014 İsmail Demirbilek
+ * License: MIT
+ */
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2014 Daniel Eden
+*/
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+.ng-aside {
+  transition: none !important;
+  -webkit-transition: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  height: 100%;
+}
+
+.ng-aside.left.in {
+  animation: fadeInLeft 150ms;
+  -webkit-animation:  fadeInLeft 150ms;
+}
+.ng-aside.right.in {
+  animation: fadeInRight 150ms;
+  -webkit-animation:  fadeInRight 150ms;
+}
+
+.ng-aside .modal-dialog {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  transition: none !important;
+  -webkit-transition: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+}
+
+.ng-aside.left .modal-dialog {
+  left: 0;
+}
+
+.ng-aside.right .modal-dialog {
+  right: 0;
+}
+
+.ng-aside .modal-dialog .modal-content {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.ng-aside .modal-dialog.modal-md {
+  width: 400px;
+}
+
+.ng-aside .modal-dialog.modal-lg {
+  width: 600px;
+}

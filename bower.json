@@ -1,0 +1,37 @@
+{
+  "name": "angular-aside",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dbtek/angular-aside",
+  "author": {
+    "name": "İsmail Demirbilek",
+    "email": "ce.demirbilek@gmail.com"
+  },
+  "description": "Off canvas side menu to use with ui-bootstrap.",
+  "main": [
+    "angular-aside.js",
+    "angular-aside.css"
+  ],
+  "keywords": [
+    "aside",
+    "off",
+    "canvas",
+    "menu",
+    "ui",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.11.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.23"
+  }
+}

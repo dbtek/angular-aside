@@ -1,0 +1,49 @@
+.ng-aside {
+  transition: none !important;
+  -webkit-transition: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  height: 100%;
+}
+
+.ng-aside.left.in {
+  animation: fadeInLeft 150ms;
+  -webkit-animation:  fadeInLeft 150ms;
+}
+.ng-aside.right.in {
+  animation: fadeInRight 150ms;
+  -webkit-animation:  fadeInRight 150ms;
+}
+
+.ng-aside .modal-dialog {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  transition: none !important;
+  -webkit-transition: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+}
+
+.ng-aside.left .modal-dialog {
+  left: 0;
+}
+
+.ng-aside.right .modal-dialog {
+  right: 0;
+}
+
+.ng-aside .modal-dialog .modal-content {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.ng-aside .modal-dialog.modal-md {
+  width: 400px;
+}
+
+.ng-aside .modal-dialog.modal-lg {
+  width: 600px;
+}
