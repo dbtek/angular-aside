@@ -1,0 +1,39 @@
+angular-aside
+=============
+
+Off canvas side menu to use with ui-bootstrap. Extends ui-bootstrap's $modal provider.
+
+##Install
+
+- Install with bower:
+```bash
+ $ bower install angular-aside
+```
+- Include css/js in html.
+
+##Usage
+
+```js
+ angular.modoule('myApp', ['ui.bootstrap', 'ngAside']);
+```
+
+```js
+angular.module('myApp')
+  .controller('MyController', function($scope, $aside) {
+    var asideInstance = $aside.open({
+      templateUrl: 'views/filters.html',
+      controller: 'AsideCtrl',
+      placement: 'left',
+      size: 'lg'
+    });
+  });
+```
+
+Supports all configuration that `$modal` has. Can be used with both `template` and `templateUrl`.
+
+##Additional Config
+- `placement` - Aside placement can be `left` or `right`.
+
+##Author
+
+İsmail Demirbilek ([@dbtek](https://twitter.com/dbtek))
