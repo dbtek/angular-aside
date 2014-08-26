@@ -1,7 +1,7 @@
 /*!
  * angular-aside - v1.0.0
  * https://github.com/dbtek/angular-aside
- * 2014-08-23
+ * 2014-08-26
  * Copyright (c) 2014 İsmail Demirbilek
  * License: MIT
  */
@@ -104,6 +104,7 @@ Copyright (c) 2014 Daniel Eden
   top: 0;
   height: 100%;
   margin: 0;
+  padding: 0;
   transition: none !important;
   -webkit-transition: none !important;
   transform: none !important;
