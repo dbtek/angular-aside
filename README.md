@@ -24,7 +24,7 @@ Off canvas side menu to use with ui-bootstrap. Extends ui-bootstrap's $modal pro
 angular.module('myApp')
   .controller('MyController', function($scope, $aside) {
     var asideInstance = $aside.open({
-      templateUrl: 'views/filters.html',
+      templateUrl: 'aside.html',
       controller: 'AsideCtrl',
       placement: 'left',
       size: 'lg'
