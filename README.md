@@ -39,7 +39,7 @@ Supports all configuration that `$modal` has. Can be used with both `template` a
 - `placement` - Aside placement can be `left` or `right`.
 
 
-#Credits
+##Credits
 - [Angular UI Bootstrap](angular-ui.github.io/bootstrap/)
 - [Animate.css](http://daneden.github.io/animate.css/)
 
