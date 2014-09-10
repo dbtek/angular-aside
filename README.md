@@ -32,11 +32,11 @@ angular.module('myApp')
   });
 ```
 
-Supports all configuration that `$modal` has. Can be used with both `template` and `templateUrl`.
+Supports all configuration that `$modal` has. Can be used with both `template` and `templateUrl`. For more info hit **Modal** section on [angular-ui bootstrap](http://angular-ui.github.io/bootstrap) documentation.
 
 
 ##Additional Config
-- `placement` - Aside placement can be `left` or `right`.
+- `placement` - Aside placement can be `'left'` or `'right'`.
 
 
 ##Credits
