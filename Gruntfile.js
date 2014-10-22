@@ -21,7 +21,7 @@ module.exports = function (grunt) {
     concat: {
       js: {
         options: {
-          banner: "'use strict';\n<%= banner %>\n",
+          banner: "\n<%= banner %>\n",
           // remove use strict tags
           process: function(src, filepath) {
             return src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, '$1');

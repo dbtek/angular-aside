@@ -1,4 +1,4 @@
-'use strict';
+
 /*!
  * angular-aside - v1.0.0
  * https://github.com/dbtek/angular-aside
