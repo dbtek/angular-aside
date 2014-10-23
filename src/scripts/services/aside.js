@@ -23,6 +23,7 @@ angular.module('ngAside')
         var vertHoriz = ['left', 'right'].indexOf(options.placement) === -1 ? 'vertical' : 'horizontal';
         // set aside classes
         options.windowClass  = 'ng-aside ' + vertHoriz + ' ' + options.placement + (options.windowClass ? ' ' + options.windowClass : '');
+        delete options.placement
         return $modal.open(options);
       }
     };
