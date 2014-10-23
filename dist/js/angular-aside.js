@@ -1,8 +1,8 @@
 
 /*!
- * angular-aside - v1.0.0
+ * angular-aside - v1.1.0
  * https://github.com/dbtek/angular-aside
- * 2014-10-22
+ * 2014-10-23
  * Copyright (c) 2014 İsmail Demirbilek
  * License: MIT
  */
@@ -33,6 +33,7 @@ angular.module('ngAside')
         var vertHoriz = ['left', 'right'].indexOf(options.placement) === -1 ? 'vertical' : 'horizontal';
         // set aside classes
         options.windowClass  = 'ng-aside ' + vertHoriz + ' ' + options.placement + (options.windowClass ? ' ' + options.windowClass : '');
+        delete options.placement
         return $modal.open(options);
       }
     };
