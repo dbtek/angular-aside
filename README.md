@@ -3,7 +3,7 @@ angular-aside
 
 Off canvas side menu to use with ui-bootstrap. Extends ui-bootstrap's $modal provider.
 
-###[Live Demo](http://plnkr.co/edit/MoHT8o31AP3xDwF8a9oD?p=preview)
+###[Live Demo](http://plnkr.co/edit/xliMROHWnqp5CpGS2NIG?p=preview)
 
 ##Install
 
