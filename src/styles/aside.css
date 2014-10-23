@@ -1,4 +1,8 @@
 .ng-aside {
+  overflow: hidden;
+}
+
+.ng-aside.horizontal {
   transition: none !important;
   -webkit-transition: none !important;
   transform: none !important;
@@ -6,16 +10,16 @@
   height: 100%;
 }
 
-.ng-aside.left.in {
+.ng-aside.horizontal.left.in {
   animation: fadeInLeft 150ms;
-  -webkit-animation:  fadeInLeft 150ms;
+  -webkit-animation: fadeInLeft 150ms;
 }
-.ng-aside.right.in {
+.ng-aside.horizontal.right.in {
   animation: fadeInRight 150ms;
-  -webkit-animation:  fadeInRight 150ms;
+  -webkit-animation: fadeInRight 150ms;
 }
 
-.ng-aside .modal-dialog {
+.ng-aside.horizontal .modal-dialog {
   position: absolute;
   top: 0;
   height: 100%;
@@ -27,24 +31,82 @@
   -webkit-transform: none !important;
 }
 
-.ng-aside.left .modal-dialog {
+.ng-aside.horizontal.left .modal-dialog {
   left: 0;
 }
 
-.ng-aside.right .modal-dialog {
+.ng-aside.horizontal.right .modal-dialog {
   right: 0;
 }
 
-.ng-aside .modal-dialog .modal-content {
+.ng-aside.horizontal .modal-dialog .modal-content {
   height: 100%;
   border: none;
   border-radius: 0;
 }
 
-.ng-aside .modal-dialog.modal-md {
+.ng-aside.horizontal .modal-dialog.modal-md {
   width: 400px;
 }
 
-.ng-aside .modal-dialog.modal-lg {
+.ng-aside.horizontal .modal-dialog.modal-lg {
   width: 600px;
+}
+
+/*
+vertical aside
+*/
+
+.ng-aside.vertical {
+  transition: none !important;
+  -webkit-transition: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+  width: 100%!important;
+  overflow: hidden;
+}
+
+.ng-aside.vertical .modal-dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%!important;
+  transition: none !important;
+  -webkit-transition: none !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+}
+
+.ng-aside.vertical.top.in {
+  animation: fadeInTop 150ms;
+  -webkit-animation: fadeInTop 150ms;
+}
+.ng-aside.vertical.bottom.in {
+  animation: fadeInBottom 150ms;
+  -webkit-animation: fadeInBottom 150ms;
+}
+
+.ng-aside.vertical.bottom .modal-dialog {
+  bottom: 0;
+}
+
+.ng-aside.vertical.top .modal-dialog {
+  top: 0;
+}
+
+.ng-aside.vertical .modal-dialog .modal-content {
+  border: none;
+  width: 100%!important;
+  height: 100%;
+  border-radius: 0;
+}
+
+.ng-aside.vertical .modal-dialog.modal-md {
+  height: 400px;
+}
+
+.ng-aside.vertical .modal-dialog.modal-lg {
+  height: 600px;
 }

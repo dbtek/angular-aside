@@ -3,7 +3,7 @@ angular-aside
 
 Off canvas side menu to use with ui-bootstrap. Extends ui-bootstrap's $modal provider.
 
-###[Live Demo](http://plnkr.co/edit/w8Clzab6jJf6fPMHEXpP?p=preview)
+###[Live Demo](http://plnkr.co/edit/MoHT8o31AP3xDwF8a9oD?p=preview)
 
 ##Install
 
@@ -36,7 +36,7 @@ Supports all configuration that `$modal` has. Can be used with both `template` a
 
 
 ##Additional Config
-- `placement` - Aside placement can be `'left'` or `'right'`.
+- `placement` - Aside placement can be `'left'`, `'right'`, `'top'`, or `'bottom'`.
 
 
 ##Credits
