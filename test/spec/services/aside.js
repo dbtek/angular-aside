@@ -22,14 +22,28 @@ describe('Service: $aside', function () {
   });
 
   it('should open a modal with correct options', function() {
-    spyOn($modal, 'open').and.callFake(function(config) {
-      return config;
-    });
+    spyOn($modal, 'open')
+      .and.callThrough();
     
-    // call open function;
-    var config = $aside.open();
+    // call open function
+    var config = $aside.open({
+      template: 'test'
+    });
 
-    expect(config.placement).toBe('left');
-    expect(config.windowClass).toBe('ng-aside left');
+    expect($modal.open).toHaveBeenCalledWith({
+      template: 'test',
+      windowClass: 'ng-aside horizontal left'
+    });
+
+    // call open function, vertical placement
+    var config = $aside.open({
+      template: 'test2',
+      placement: 'bottom'
+    });
+
+    expect($modal.open).toHaveBeenCalledWith({
+      template: 'test2',
+      windowClass: 'ng-aside vertical bottom'
+    });
   });
 });
