@@ -1,4 +1,4 @@
-angular-aside
+angular-aside ![bower version](http://img.shields.io/bower/v/angular-aside.svg)
 =============
 
 Off canvas side menu to use with ui-bootstrap. Extends ui-bootstrap's $modal provider.
