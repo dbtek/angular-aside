@@ -1,7 +1,7 @@
 /*!
- * angular-aside - v1.1.0
+ * angular-aside - v1.1.1
  * https://github.com/dbtek/angular-aside
- * 2014-10-23
+ * 2014-11-25
  * Copyright (c) 2014 İsmail Demirbilek
  * License: MIT
  */
@@ -157,10 +157,10 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .ng-aside.horizontal {
-  transition: none !important;
-  -webkit-transition: none !important;
-  transform: none !important;
-  -webkit-transform: none !important;
+  transition: none;
+  -webkit-transition: none;
+  transform: none;
+  -webkit-transform: none;
   height: 100%;
 }
 
@@ -168,6 +168,7 @@ Copyright (c) 2014 Daniel Eden
   animation: fadeInLeft 150ms;
   -webkit-animation: fadeInLeft 150ms;
 }
+
 .ng-aside.horizontal.right.in {
   animation: fadeInRight 150ms;
   -webkit-animation: fadeInRight 150ms;
@@ -179,10 +180,10 @@ Copyright (c) 2014 Daniel Eden
   height: 100%;
   margin: 0;
   padding: 0;
-  transition: none !important;
-  -webkit-transition: none !important;
-  transform: none !important;
-  -webkit-transform: none !important;
+  transition: none;
+  -webkit-transition: none;
+  transform: none;
+  -webkit-transform: none;
 }
 
 .ng-aside.horizontal.left .modal-dialog {
@@ -199,23 +200,11 @@ Copyright (c) 2014 Daniel Eden
   border-radius: 0;
 }
 
-.ng-aside.horizontal .modal-dialog.modal-md {
-  width: 400px;
-}
-
-.ng-aside.horizontal .modal-dialog.modal-lg {
-  width: 600px;
-}
-
-/*
-vertical aside
-*/
-
 .ng-aside.vertical {
-  transition: none !important;
-  -webkit-transition: none !important;
-  transform: none !important;
-  -webkit-transform: none !important;
+  transition: none;
+  -webkit-transition: none;
+  transform: none;
+  -webkit-transform: none;
   width: 100%!important;
   overflow: hidden;
 }
@@ -227,16 +216,17 @@ vertical aside
   margin: 0;
   padding: 0;
   width: 100%!important;
-  transition: none !important;
-  -webkit-transition: none !important;
-  transform: none !important;
-  -webkit-transform: none !important;
+  transition: none;
+  -webkit-transition: none;
+  transform: none;
+  -webkit-transform: none;
 }
 
 .ng-aside.vertical.top.in {
   animation: fadeInTop 150ms;
   -webkit-animation: fadeInTop 150ms;
 }
+
 .ng-aside.vertical.bottom.in {
   animation: fadeInBottom 150ms;
   -webkit-animation: fadeInBottom 150ms;
@@ -252,15 +242,7 @@ vertical aside
 
 .ng-aside.vertical .modal-dialog .modal-content {
   border: none;
-  width: 100%!important;
+  width: 100%;
   height: 100%;
   border-radius: 0;
-}
-
-.ng-aside.vertical .modal-dialog.modal-md {
-  height: 400px;
-}
-
-.ng-aside.vertical .modal-dialog.modal-lg {
-  height: 600px;
 }

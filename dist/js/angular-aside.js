@@ -1,8 +1,8 @@
 
 /*!
- * angular-aside - v1.1.0
+ * angular-aside - v1.1.1
  * https://github.com/dbtek/angular-aside
- * 2014-10-23
+ * 2014-11-25
  * Copyright (c) 2014 İsmail Demirbilek
  * License: MIT
  */
@@ -15,7 +15,6 @@ angular.module('ngAside')
    * @description
    * Factory to create a modal instance to use it as aside. It simply wraps $modal by overriding open() method and sets a class on modal window.
    * @function
-   * @author İsmail Demirbilek
    */
   .factory('$aside', function($modal) {
     var defaults = this.defaults = {
