@@ -14,6 +14,7 @@
   animation: fadeInLeft 150ms;
   -webkit-animation: fadeInLeft 150ms;
 }
+
 .ng-aside.horizontal.right.in {
   animation: fadeInRight 150ms;
   -webkit-animation: fadeInRight 150ms;
@@ -45,18 +46,6 @@
   border-radius: 0;
 }
 
-.ng-aside.horizontal .modal-dialog.modal-md {
-  width: 400px;
-}
-
-.ng-aside.horizontal .modal-dialog.modal-lg {
-  width: 600px;
-}
-
-/*
-vertical aside
-*/
-
 .ng-aside.vertical {
   transition: none;
   -webkit-transition: none;
@@ -83,6 +72,7 @@ vertical aside
   animation: fadeInTop 150ms;
   -webkit-animation: fadeInTop 150ms;
 }
+
 .ng-aside.vertical.bottom.in {
   animation: fadeInBottom 150ms;
   -webkit-animation: fadeInBottom 150ms;
@@ -101,12 +91,4 @@ vertical aside
   width: 100%;
   height: 100%;
   border-radius: 0;
-}
-
-.ng-aside.vertical .modal-dialog.modal-md {
-  height: 400px;
-}
-
-.ng-aside.vertical .modal-dialog.modal-lg {
-  height: 600px;
 }
