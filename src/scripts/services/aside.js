@@ -5,7 +5,6 @@ angular.module('ngAside')
    * @description
    * Factory to create a modal instance to use it as aside. It simply wraps $modal by overriding open() method and sets a class on modal window.
    * @function
-   * @author İsmail Demirbilek
    */
   .factory('$aside', function($modal) {
     var defaults = this.defaults = {
