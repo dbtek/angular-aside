@@ -17,7 +17,7 @@ Off canvas side menu to use with ui-bootstrap. Extends ui-bootstrap's $modal pro
 ##Usage
 
 ```js
- angular.modoule('myApp', ['ui.bootstrap', 'ngAside']);
+ angular.module('myApp', ['ui.bootstrap', 'ngAside']);
 ```
 
 ```js
