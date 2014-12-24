@@ -339,6 +339,14 @@ Copyright (c) 2014 Daniel Eden
   left: 0;
 }
 
+.ng-aside.horizontal.right .modal-dialog {
+  animation: fadeOutRight 400ms;
+  -webkit-animation: fadeOutRight 400ms;
+  -moz-animation: fadeOutRight 400ms;
+  -o-animation: fadeOutRight 400ms;
+  -ms-animation: fadeOutRight 400ms;
+}
+
 .ng-aside.horizontal.right.in .modal-dialog {
   animation: fadeInRight 250ms;
   -webkit-animation: fadeInRight 250ms;
