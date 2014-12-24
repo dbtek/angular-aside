@@ -77,6 +77,9 @@ module.exports = function (grunt) {
     },
     cssmin: {
       dist: {
+        options: {
+          banner: '<%= banner %>'
+        },
         files: {
           '<%= appConfig.dist %>/css/angular-aside.min.css': [
             '.tmp/styles/{,*/}*.css',
@@ -103,6 +106,9 @@ module.exports = function (grunt) {
     },
     uglify: {
       dist: {
+        options: {
+          preserveComments: 'some'
+        },
         files: {
           '<%= appConfig.dist %>/js/angular-aside.min.js': ['.tmp/**.js']
         }
