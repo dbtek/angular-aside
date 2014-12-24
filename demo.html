@@ -42,8 +42,7 @@
             $aside.open({
               templateUrl: 'aside.html',
               placement: position,
-              size: 'sm',
-              backdrop: false,
+              backdrop: true,
               controller: function($scope, $modalInstance) {
                 $scope.ok = function(e) {
                   $modalInstance.close();
@@ -64,8 +63,6 @@
       </div>
       <div class="modal-body">
         Look im in aside.
-        <div style="height:1300px"></div>
-        What's up? 
       </div>
       <div class="modal-footer">
           <button class="btn btn-primary" ng-click="ok($event)">OK</button>
