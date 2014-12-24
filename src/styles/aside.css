@@ -11,12 +11,18 @@
   padding: 0;
 }
 
-.modal-open .ng-aside,
-.ng-aside.in .modal-dialog {
-  transition: none;
+.ng-aside.fade .modal-dialog {
+  -o-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
   -webkit-transition: none;
-  transform: none;
+  transition: none;
+  /*CSS transforms*/
+  -o-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
   -webkit-transform: none;
+  transform: none;
 }
 
 .ng-aside .modal-dialog .modal-content {
@@ -42,9 +48,20 @@
   height: 100%;
 }
 
+.modal-open .ng-aside.horizontal.left .modal-dialog {
+  animation: fadeOutLeft 250ms;
+  -webkit-animation: fadeOutLeft 250ms;
+  -moz-animation: fadeOutLeft 250ms;
+  -o-animation: fadeOutLeft 250ms;
+  -ms-animation: fadeOutLeft 250ms;
+}
+
 .ng-aside.horizontal.left.in .modal-dialog {
-  animation: fadeInLeft 150ms;
-  -webkit-animation: fadeInLeft 150ms;
+  animation: fadeInLeft 400ms;
+  -webkit-animation: fadeInLeft 400ms;
+  -moz-animation: fadeInLeft 400ms;
+  -o-animation: fadeInLeft 400ms;
+  -ms-animation: fadeInLeft 400ms;
 }
 
 .ng-aside.horizontal.left .modal-dialog {
@@ -52,8 +69,8 @@
 }
 
 .ng-aside.horizontal.right.in .modal-dialog {
-  animation: fadeInRight 150ms;
-  -webkit-animation: fadeInRight 150ms;
+  animation: fadeInRight 250ms;
+  -webkit-animation: fadeInRight 250ms;
 }
 
 .ng-aside.horizontal.right .modal-dialog {
@@ -77,14 +94,39 @@
   max-height: 400px;
 }
 
-.ng-aside.vertical.top.in {
-  animation: fadeInTop 150ms;
-  -webkit-animation: fadeInTop 150ms;
+.ng-aside.vertical.top .modal-dialog {
+  animation: fadeOutUp 250ms;
+  -webkit-animation: fadeOutUp 250ms;
+  -webkit-animation: fadeOutUp 250ms;
+  -moz-animation: fadeOutUp 250ms;
+  -o-animation: fadeOutUp 250ms;
+  -ms-animation: fadeOutUp 250ms;
 }
 
-.ng-aside.vertical.bottom.in {
-  animation: fadeInBottom 150ms;
-  -webkit-animation: fadeInBottom 150ms;
+.ng-aside.vertical.top.in .modal-dialog {
+  animation: fadeInTop 250ms;
+  -webkit-animation: fadeInTop 250ms;
+  -webkit-animation: fadeInTop 250ms;
+  -moz-animation: fadeInTop 250ms;
+  -o-animation: fadeInTop 250ms;
+  -ms-animation: fadeInTop 250ms;
+}
+
+.ng-aside.vertical.bottom .modal-dialog {
+  animation: fadeOutDown 250ms;
+  -webkit-animation: fadeOutDown 250ms;
+  -webkit-animation: fadeOutDown 250ms;
+  -moz-animation: fadeOutDown 250ms;
+  -o-animation: fadeOutDown 250ms;
+  -ms-animation: fadeOutDown 250ms;
+}
+.ng-aside.vertical.bottom.in .modal-dialog {
+  animation: fadeInBottom 250ms;
+  -webkit-animation: fadeInBottom 250ms;
+  -webkit-animation: fadeInBottom 250ms;
+  -moz-animation: fadeInBottom 250ms;
+  -o-animation: fadeInBottom 250ms;
+  -ms-animation: fadeInBottom 250ms;
 }
 
 .ng-aside.vertical.bottom .modal-dialog {
