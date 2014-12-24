@@ -1,7 +1,7 @@
 /*!
- * angular-aside - v1.1.1
+ * angular-aside - v1.1.2
  * https://github.com/dbtek/angular-aside
- * 2014-11-25
+ * 2014-12-24
  * Copyright (c) 2014 İsmail Demirbilek
  * License: MIT
  */
@@ -152,84 +152,252 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: fadeInBottom;
   animation-name: fadeInBottom;
 }
-.ng-aside {
-  overflow: hidden;
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
 }
 
-.ng-aside.horizontal {
-  transition: none;
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+          animation-name: fadeOutLeft;
+}
+
+@-webkit-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+          animation-name: fadeOutRight;
+}
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+          animation-name: fadeOutUp;
+}
+
+
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+          animation-name: fadeOutDown;
+}
+/* Common */
+
+.ng-aside {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ng-aside .modal-dialog {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.ng-aside.fade .modal-dialog {
+  -o-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
   -webkit-transition: none;
-  transform: none;
+  transition: none;
+  /*CSS transforms*/
+  -o-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
   -webkit-transform: none;
+  transform: none;
+}
+
+.ng-aside .modal-dialog .modal-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: none;
+  border-radius: 0;
+}
+
+/* Horizontal */
+
+.ng-aside.horizontal {
   height: 100%;
 }
 
-.ng-aside.horizontal.left.in {
-  animation: fadeInLeft 150ms;
-  -webkit-animation: fadeInLeft 150ms;
-}
-
-.ng-aside.horizontal.right.in {
-  animation: fadeInRight 150ms;
-  -webkit-animation: fadeInRight 150ms;
+.ng-aside.horizontal .modal-dialog .modal-content {
+  height: 100%;
 }
 
 .ng-aside.horizontal .modal-dialog {
   position: absolute;
   top: 0;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  transition: none;
-  -webkit-transition: none;
-  transform: none;
-  -webkit-transform: none;
+}
+
+.modal-open .ng-aside.horizontal.left .modal-dialog {
+  animation: fadeOutLeft 250ms;
+  -webkit-animation: fadeOutLeft 250ms;
+  -moz-animation: fadeOutLeft 250ms;
+  -o-animation: fadeOutLeft 250ms;
+  -ms-animation: fadeOutLeft 250ms;
+}
+
+.ng-aside.horizontal.left.in .modal-dialog {
+  animation: fadeInLeft 400ms;
+  -webkit-animation: fadeInLeft 400ms;
+  -moz-animation: fadeInLeft 400ms;
+  -o-animation: fadeInLeft 400ms;
+  -ms-animation: fadeInLeft 400ms;
 }
 
 .ng-aside.horizontal.left .modal-dialog {
   left: 0;
 }
 
+.ng-aside.horizontal.right.in .modal-dialog {
+  animation: fadeInRight 250ms;
+  -webkit-animation: fadeInRight 250ms;
+}
+
 .ng-aside.horizontal.right .modal-dialog {
   right: 0;
 }
 
-.ng-aside.horizontal .modal-dialog .modal-content {
-  height: 100%;
-  border: none;
-  border-radius: 0;
-}
+/* Vertical */
 
 .ng-aside.vertical {
-  transition: none;
-  -webkit-transition: none;
-  transform: none;
-  -webkit-transform: none;
-  width: 100%!important;
+  width: 100% !important;
   overflow: hidden;
 }
 
 .ng-aside.vertical .modal-dialog {
-  position: absolute;
   left: 0;
   right: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%!important;
-  transition: none;
-  -webkit-transition: none;
-  transform: none;
-  -webkit-transform: none;
+  width: 100% !important;
 }
 
-.ng-aside.vertical.top.in {
-  animation: fadeInTop 150ms;
-  -webkit-animation: fadeInTop 150ms;
+.ng-aside.vertical .modal-dialog .modal-content {
+  max-height: 400px;
 }
 
-.ng-aside.vertical.bottom.in {
-  animation: fadeInBottom 150ms;
-  -webkit-animation: fadeInBottom 150ms;
+.ng-aside.vertical.top .modal-dialog {
+  animation: fadeOutUp 250ms;
+  -webkit-animation: fadeOutUp 250ms;
+  -webkit-animation: fadeOutUp 250ms;
+  -moz-animation: fadeOutUp 250ms;
+  -o-animation: fadeOutUp 250ms;
+  -ms-animation: fadeOutUp 250ms;
+}
+
+.ng-aside.vertical.top.in .modal-dialog {
+  animation: fadeInTop 250ms;
+  -webkit-animation: fadeInTop 250ms;
+  -webkit-animation: fadeInTop 250ms;
+  -moz-animation: fadeInTop 250ms;
+  -o-animation: fadeInTop 250ms;
+  -ms-animation: fadeInTop 250ms;
+}
+
+.ng-aside.vertical.bottom .modal-dialog {
+  animation: fadeOutDown 250ms;
+  -webkit-animation: fadeOutDown 250ms;
+  -webkit-animation: fadeOutDown 250ms;
+  -moz-animation: fadeOutDown 250ms;
+  -o-animation: fadeOutDown 250ms;
+  -ms-animation: fadeOutDown 250ms;
+}
+.ng-aside.vertical.bottom.in .modal-dialog {
+  animation: fadeInBottom 250ms;
+  -webkit-animation: fadeInBottom 250ms;
+  -webkit-animation: fadeInBottom 250ms;
+  -moz-animation: fadeInBottom 250ms;
+  -o-animation: fadeInBottom 250ms;
+  -ms-animation: fadeInBottom 250ms;
 }
 
 .ng-aside.vertical.bottom .modal-dialog {
@@ -241,8 +409,5 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .ng-aside.vertical .modal-dialog .modal-content {
-  border: none;
   width: 100%;
-  height: 100%;
-  border-radius: 0;
 }
