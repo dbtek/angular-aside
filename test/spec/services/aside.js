@@ -7,10 +7,10 @@ describe('Service: $aside', function () {
 
   // instantiate service
   var $aside, $modal;
-  
-  beforeEach(inject(function (_$aside_, _$modal_) {
-    $aside = _$aside_;
-    $modal =  _$modal_;
+
+  beforeEach(inject(function ($injector) {
+    $aside = $injector.get('$aside');
+    $modal =  $injector.get('$modal');
   }));
 
   it('should do something', function () {
@@ -24,7 +24,7 @@ describe('Service: $aside', function () {
   it('should open a modal with correct options', function() {
     spyOn($modal, 'open')
       .and.callThrough();
-    
+
     // call open function
     var config = $aside.open({
       template: 'test'
