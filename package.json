@@ -2,6 +2,7 @@
   "name": "angular-aside",
   "version": "1.2.0",
   "repository": "https://github.com/dbtek/angular-aside",
+  "license": "MIT",
   "browser": "index.js",
   "style": "dist/css/angular-aside.css",
   "peerDependencies": {
