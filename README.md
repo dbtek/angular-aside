@@ -7,12 +7,16 @@ Off canvas side menu to use with ui-bootstrap. Extends ui-bootstrap's $modal pro
 
 ##Install
 
-- Install with bower:
+#### Bower:
 ```bash
  $ bower install angular-aside
 ```
-- Include css/js in html.
+Then, include css/js in html.
 
+#### NPM
+```bash
+ $ npm install angular-aside
+```
 
 ##Usage
 
