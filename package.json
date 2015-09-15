@@ -4,7 +4,9 @@
   "repository": "https://github.com/dbtek/angular-aside",
   "browser": "index.js",
   "style": "dist/css/angular-aside.css",
-  "dependencies": {},
+  "peerDependencies": {
+    "angular-bootstrap": ">=0.10.0"
+  },
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-connect": "~0.5.0",
