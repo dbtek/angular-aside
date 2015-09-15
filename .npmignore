@@ -1,0 +1,6 @@
+src
+test
+Gruntfile.js
+bower.json
+karma.conf.js
+.jshintrc
