@@ -1,4 +1,4 @@
-angular-aside ![bower version](http://img.shields.io/bower/v/angular-aside.svg)
+angular-aside ![bower version](http://img.shields.io/bower/v/angular-aside.svg) [![npm version](https://badge.fury.io/js/angular-aside.svg)](https://www.npmjs.com/package/angular-aside)
 =============
 
 Off canvas side menu to use with ui-bootstrap. Extends ui-bootstrap's $modal provider.
