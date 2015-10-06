@@ -6,7 +6,7 @@
   "browser": "index.js",
   "style": "dist/css/angular-aside.css",
   "peerDependencies": {
-    "angular-bootstrap": ">=0.10.0"
+    "angular-ui-bootstrap": ">=0.10.0"
   },
   "keywords": [
     "angular",
