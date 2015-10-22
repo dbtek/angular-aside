@@ -10,7 +10,7 @@ describe('Service: $aside', function () {
 
   beforeEach(inject(function ($injector) {
     $aside = $injector.get('$aside');
-    $modal =  $injector.get('$modal');
+    $modal =  $injector.get('$uibModal');
   }));
 
   it('should do something', function () {
