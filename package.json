@@ -43,7 +43,10 @@
     "load-grunt-tasks": "~0.4.0",
     "time-grunt": "~0.2.7"
   },
-  "scripts": {},
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "grunt test"
+  },
   "engines": {
     "node": ">=0.10.0"
   }
