@@ -1,7 +1,9 @@
 angular-aside ![bower version](http://img.shields.io/bower/v/angular-aside.svg) [![npm version](https://badge.fury.io/js/angular-aside.svg)](https://www.npmjs.com/package/angular-aside)
 =============
 
-Off canvas side menu for use with ui-bootstrap 0.14+. Extends ui-bootstrap's $uibModal provider.
+Off canvas side menu for use with ui-bootstrap 0.14+. Extends ui-bootstrap's `$uibModal` provider.
+
+:information_desk_person: Please use v1.2.x for ui-bootstrap versions 0.13 and below.
 
 ###[Live Demo](http://plnkr.co/edit/G7vMSv?p=preview)
 
