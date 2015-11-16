@@ -9,7 +9,7 @@
      * Factory to create a uibModal instance to use it as aside. It simply wraps $uibModal by overriding open() method and sets a class on modal window.
      * @function
      */
-    .factory('$aside', function($uibModal) {
+    .factory('$aside', ['$uibModal', function($uibModal) {
       var defaults = this.defaults = {
         placement: 'left'
       };
@@ -33,5 +33,5 @@
       // create $aside as extended $uibModal
       var $aside = angular.extend({}, $uibModal, asideFactory);
       return $aside;
-    });
+    }]);
 })();
