@@ -22,14 +22,10 @@ module.exports = function (grunt) {
       js: {
         options: {
           banner: "\n<%= banner %>\n",
-          // remove use strict tags
-          process: function(src, filepath) {
-            return src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, '$1');
-          },
           stripBanners: true
         },
         files: {
-          '<%= appConfig.dist %>/js/angular-aside.js': ['<%= appConfig.app %>/scripts/{,*/}*.js']
+          '.tmp/concat/js/angular-aside.js': ['<%= appConfig.app %>/scripts/{,*/}*.js']
         }
       },
       css: {
@@ -94,13 +90,16 @@ module.exports = function (grunt) {
         singleRun: true
       }
     },
-    ngmin: {
+    ngAnnotate: {
+      options: {
+        singleQuotes: true
+      },
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= appConfig.dist %>/js',
+          cwd: '.tmp/concat/js',
           src: '*.js',
-          dest: '.tmp/'
+          dest: '<%= appConfig.dist %>/js'
         }]
       }
     },
@@ -110,7 +109,7 @@ module.exports = function (grunt) {
           preserveComments: 'some'
         },
         files: {
-          '<%= appConfig.dist %>/js/angular-aside.min.js': ['.tmp/**.js']
+          '<%= appConfig.dist %>/js/angular-aside.min.js': ['<%= appConfig.dist %>/js/angular-aside.js']
         }
       }
     },
@@ -134,7 +133,7 @@ module.exports = function (grunt) {
     'ngdocs',
     'clean:dist',
     'concat',
-    'ngmin',
+    'ngAnnotate',
     'cssmin',
     'uglify'
   ]);
