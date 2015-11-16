@@ -1,14 +1,16 @@
 
 /*!
- * angular-aside - v1.3.0
+ * angular-aside - v1.3.1
  * https://github.com/dbtek/angular-aside
- * 2015-10-22
+ * 2015-11-16
  * Copyright (c) 2015 İsmail Demirbilek
  * License: MIT
  */
 
 (function() {
-/**
+  'use strict';
+
+  /**
    * @ngdoc overview
    * @name ngAside
    * @description
@@ -20,7 +22,9 @@
 })();
 
 (function() {
-angular.module('ngAside')
+  'use strict';
+
+  angular.module('ngAside')
     /**
      * @ngdoc service
      * @name ngAside.services:$aside
@@ -28,7 +32,7 @@ angular.module('ngAside')
      * Factory to create a uibModal instance to use it as aside. It simply wraps $uibModal by overriding open() method and sets a class on modal window.
      * @function
      */
-    .factory('$aside', function($uibModal) {
+    .factory('$aside', ['$uibModal', function($uibModal) {
       var defaults = this.defaults = {
         placement: 'left'
       };
@@ -52,5 +56,5 @@ angular.module('ngAside')
       // create $aside as extended $uibModal
       var $aside = angular.extend({}, $uibModal, asideFactory);
       return $aside;
-    });
+    }]);
 })();
