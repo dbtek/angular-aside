@@ -44,7 +44,6 @@
     "time-grunt": "~0.2.7"
   },
   "scripts": {
-    "postinstall": "bower install",
     "test": "grunt test"
   },
   "engines": {
