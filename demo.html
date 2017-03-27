@@ -31,8 +31,8 @@
       .about-links .cypher:hover i { color: #16a085; }
       .about-links .lab:hover i { color: #8e44ad; }
     </style>
-    <script src="https://code.angularjs.org/1.4.7/angular.js"></script>
-    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.3/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.min.js"></script>
     <script src="dist/js/angular-aside.min.js"></script>
     <script>
       angular.module('asideApp', ['ui.bootstrap', 'ngAside'])
@@ -42,13 +42,13 @@
               templateUrl: 'aside.html',
               placement: position,
               backdrop: true,
-              controller: function($scope, $modalInstance) {
+              controller: function($scope, $uibModalInstance) {
                 $scope.ok = function(e) {
-                  $modalInstance.close();
+                  $uibModalInstance.close();
                   e.stopPropagation();
                 };
                 $scope.cancel = function(e) {
-                  $modalInstance.dismiss();
+                  $uibModalInstance.dismiss();
                   e.stopPropagation();
                 };
               }
